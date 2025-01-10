@@ -1,0 +1,54 @@
+.bg {
+    width: 1335px;
+    height: 605px;
+    background-image: url('mosaic-bg.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.mod-prev {
+    position:absolute;
+    left: 20%;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Make it a positioned ancestor */
+}
+
+.modal {
+    position: absolute;
+    right:10%;
+    visibility: hidden;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+    position: relative; /* Make it a positioned ancestor */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.opn-modal{
+    visibility: visible;
+}
